@@ -26,13 +26,13 @@ describe("LinkedIn", () => {
         await browser.pause(5000);
 
         // Set email value
-        await $('[name="session_key"]').setValue("srikanthprabha62@gmail.com");
+        await $('[name="session_key"]').setValue("Enter_email");
 
         // Pause to simulate user interaction delay
         await browser.pause(5000);
 
         // Set password value
-        await $('[id="password"]').setValue("Rajan@91");
+        await $('[id="password"]').setValue("Enter_password");
 
         // Pause to simulate user interaction delay
         await browser.pause(5000);
