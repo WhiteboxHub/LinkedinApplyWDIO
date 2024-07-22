@@ -5,11 +5,11 @@ describe("LinkedIn", () => {
 
     const emailInput = await $('[name="session_key"]');
     await emailInput.waitForDisplayed({ timeout: 10000 });
-    await emailInput.setValue("bn234crpf@gmail.com");
+    await emailInput.setValue("email");
 
     const passwordInput = await $('#password');
     await passwordInput.waitForDisplayed({ timeout: 10000 });
-    await passwordInput.setValue("Rajan@71");
+    await passwordInput.setValue("password");
 
     const loginButton = await $('.btn__primary--large.from__button--floating');
     await loginButton.waitForClickable({ timeout: 10000 });
