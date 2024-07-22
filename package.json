@@ -16,6 +16,7 @@
     "@wdio/mocha-framework": "^8.39.0",
     "@wdio/selenium-standalone-service": "^8.15.0",
     "@wdio/spec-reporter": "^8.39.0",
-    "@wdio/visual-service": "^5.1.1"
+    "@wdio/visual-service": "^5.1.1",
+    "selenium-standalone": "^10.0.0"
   }
 }
