@@ -10,11 +10,11 @@ describe("LinkedIn", function () {
 
     const emailInput = await $('[name="session_key"]');
     await emailInput.waitForDisplayed({ timeout: 30000 });
-    await emailInput.setValue("Enter email");
+    await emailInput.setValue("email");
 
     const passwordInput = await $("#password");
     await passwordInput.waitForDisplayed({ timeout: 30000 });
-    await passwordInput.setValue("Enter Password");
+    await passwordInput.setValue("password");
 
     const loginButton = await $(".btn__primary--large.from__button--floating");
     await loginButton.waitForClickable({ timeout: 30000 });
@@ -31,7 +31,7 @@ describe("LinkedIn", function () {
     await searchInput.waitForDisplayed({ timeout: 30000 });
     await searchInput.click();
     await searchInput.clearValue();
-    await searchInput.setValue("frontend developer");
+    await searchInput.setValue("ml engineer");
     await browser.keys("Enter");
 
     await browser.pause(10000); // Increase pause time to ensure results load
@@ -121,7 +121,7 @@ describe("LinkedIn", function () {
         console.log("Collected Job IDs for page", pageIndex, ":", pageJobIds);
 
         // Define the file path and name in the project directory
-        const filePath = path.join(__dirname, "jobIdsUI1.json");
+        const filePath = path.join(__dirname, "AlljobIdsML.json");
 
         // Convert the job IDs object to a JSON string
         const jsonData = JSON.stringify(jobIds, null, 2);
@@ -159,3 +159,5 @@ describe("LinkedIn", function () {
     await browser.debug();
   });
 });
+
+
